@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Aplicação desenvolvida para o Projeto de Introdução à Criptografia da disciplina Segurança de Sistemas. \
-O sistema implementa a Cifra de Vigenère, permitindo criptografia e descriptografia de mensagens por uma interface web simples.
+O sistema implementa vários algoritmos de criptografia, permitindo criptografia e descriptografia de mensagens por uma interface web simples.
 
 ---
 
