@@ -20,7 +20,7 @@ const encrypt = (message, key) => {
         encryptedValues.push(cipherDigit);
     }
     return encryptedValues;
-};@
+};
 
 // Descriptografia exatamente igual, apenas aplicar XOR novamente
 const decrypt = (cipher, key) => {
