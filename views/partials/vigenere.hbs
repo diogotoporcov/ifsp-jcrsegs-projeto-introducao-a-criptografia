@@ -1,0 +1,57 @@
+<div class="content">
+    <h1 class="gradient-text">{{title}}</h1>
+    <label for="input">Mensagem</label>
+    <textarea id="input" name="input" placeholder="Digite…" rows="5" required></textarea>
+    <div class="button-container">
+        <button id="clean-btn">Limpar</button>
+    </div>
+
+    <label for="key">Chave</label>
+    <textarea id="key" name="key" placeholder="Digite…" rows="1" required>ChaveSecreta</textarea>
+
+    <div class="button-container">
+        <button id="encrypt-btn">Criptografar</button>
+        <button id="decrypt-btn">Descriptografar</button>
+    </div>
+
+    <label for="output">Saída</label>
+    <textarea readonly id="output" name="output" placeholder="Digite..." rows="5" required></textarea>
+
+    <div class="button-container">
+        <button id="copy-btn">Copiar</button>
+    </div>
+</div>
+
+<script src="/javascripts/vigenere.js"></script>
+<script>
+    const cardinality = 0x10FFFF;
+
+    document.getElementById("encrypt-btn").addEventListener("click", () => {
+        const msg = document.getElementById("input").value;
+        const key = document.getElementById("key").value;
+        const keyIter = keyIterator(msg, key);
+        document.getElementById("output").value = encrypt(msg, keyIter, cardinality);
+    });
+
+    document.getElementById("decrypt-btn").addEventListener("click", () => {
+        const msg = document.getElementById("input").value;
+        const key = document.getElementById("key").value;
+        const keyIter = keyIterator(msg, key);
+        document.getElementById("output").value = decrypt(msg, keyIter, cardinality);
+    });
+
+    document.getElementById("clean-btn").addEventListener("click", () => {
+        document.getElementById("input").value = "";
+        document.getElementById("output").value = "";
+    });
+
+    document.getElementById("copy-btn").addEventListener("click", async () => {
+        const output = document.getElementById("output").value;
+        if (!output) return;
+        try {
+            await navigator.clipboard.writeText(output);
+        } catch {
+            alert("Falha ao copiar.");
+        }
+    });
+</script>
