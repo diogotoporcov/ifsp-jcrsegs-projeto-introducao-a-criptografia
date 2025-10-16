@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Projeto de Introdução à Criptografia' });
+    res.render('vigenere', { title: 'Cifra de Vigenère' });
 });
 
 module.exports = router;

@@ -91,3 +91,61 @@ h1.gradient-text {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+input {
+  width: 100%;
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  color: #f3f4f6;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+}
+
+.hill-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hill-matrix input {
+  width: 100%;
+  min-width: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu a {
+  display: inline-block;
+}
+
+.menu li + li {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.back-link{
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a2b0ba;
+}
+.back-link:hover{ text-decoration: underline; }

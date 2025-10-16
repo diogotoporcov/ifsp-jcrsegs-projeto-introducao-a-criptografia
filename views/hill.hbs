@@ -1,0 +1,40 @@
+{{> back}}
+
+<div class="content">
+    <h1 class="gradient-text">{{title}}</h1>
+
+    <label for="input">Mensagem</label>
+    <textarea id="input" rows="1" placeholder="Digite uma palavra que tenha um número par de letras..." style="resize: none"></textarea>
+
+    <div class="button-container">
+        <button id="clean-btn">Limpar</button>
+    </div>
+
+    <label>Matriz-chave</label>
+    <div class="hill-matrix">
+    <!--suppress HtmlFormInputWithoutLabel -->
+        <input type="number" id="matrix00" value="2">
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <input type="number" id="matrix01" value="3">
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <input type="number" id="matrix10" value="3">
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <input type="number" id="matrix11" value="5">
+    </div>
+
+    <div class="button-container">
+        <button id="encrypt-btn">Criptografar</button>
+        <button id="decrypt-btn">Descriptografar</button>
+    </div>
+
+    <label for="output">Saída</label>
+    <textarea readonly id="output" rows="1" style="resize: none"></textarea>
+
+    <div class="button-container">
+        <button id="copy-btn">Copiar</button>
+    </div>
+</div>
+
+<script src="/javascripts/hill.js"></script>
+<script src="/javascripts/cleanBtn.js"></script>
+<script src="/javascripts/copyBtn.js"></script>

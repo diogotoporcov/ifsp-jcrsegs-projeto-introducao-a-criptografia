@@ -1,0 +1,29 @@
+{{> back}}
+
+<div class="content">
+    <h1 class="gradient-text">{{title}}</h1>
+    <label for="input">Mensagem</label>
+    <textarea id="input" name="input" placeholder="Digite..." rows="5" required></textarea>
+    <div class="button-container">
+        <button id="clean-btn">Limpar</button>
+    </div>
+
+    <label for="key">Chave</label>
+    <textarea id="key" name="key" placeholder="Digite..." rows="1" required>Chave</textarea>
+
+    <div class="button-container">
+        <button id="encrypt-btn">Criptografar</button>
+        <button id="decrypt-btn">Descriptografar</button>
+    </div>
+
+    <label for="output">Saída</label>
+    <textarea readonly id="output" name="output" placeholder="Digite..." rows="5" required></textarea>
+
+    <div class="button-container">
+        <button id="copy-btn">Copiar</button>
+    </div>
+</div>
+
+<script src="/javascripts/vigenere.js"></script>
+<script src="/javascripts/cleanBtn.js"></script>
+<script src="/javascripts/copyBtn.js"></script>

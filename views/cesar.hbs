@@ -1,0 +1,31 @@
+{{> back}}
+
+<div class="content">
+    <h1 class="gradient-text">{{title}}</h1>
+
+    <label for="input">Mensagem</label>
+    <textarea id="input" placeholder="Digite..." rows="5"></textarea>
+
+    <div class="button-container">
+        <button id="clean-btn">Limpar</button>
+    </div>
+
+    <label for="key">Deslocamento</label>
+    <input type="number" placeholder="1" id="key" value="3"/>
+
+    <div class="button-container">
+        <button id="encrypt-btn">Criptografar</button>
+        <button id="decrypt-btn">Descriptografar</button>
+    </div>
+
+    <label for="output">Saída</label>
+    <textarea readonly id="output" rows="5"></textarea>
+
+    <div class="button-container">
+        <button id="copy-btn">Copiar</button>
+    </div>
+</div>
+
+<script src="/javascripts/cesar.js"></script>
+<script src="/javascripts/cleanBtn.js"></script>
+<script src="/javascripts/copyBtn.js"></script>

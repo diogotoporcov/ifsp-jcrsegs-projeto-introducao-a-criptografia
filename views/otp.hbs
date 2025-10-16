@@ -1,0 +1,31 @@
+{{> back}}
+
+<div class="content">
+    <h1 class="gradient-text">One Time Pad (OTP)</h1>
+
+    <label for="input">Entrada</label>
+    <textarea id="input" rows="3" placeholder="Ex: 12 45 23 89"></textarea>
+
+    <div class="button-container">
+        <button id="clean-btn">Limpar</button>
+    </div>
+
+    <label for="key">Chave</label>
+    <textarea id="key" rows="3" placeholder="Ex: 3 78 90 12"></textarea>
+
+    <div class="button-container">
+        <button id="encrypt-btn">Criptografar</button>
+        <button id="decrypt-btn">Descriptografar</button>
+    </div>
+
+    <label for="output">Saída</label>
+    <textarea readonly id="output" rows="3"></textarea>
+
+    <div class="button-container">
+        <button id="copy-btn">Copiar</button>
+    </div>
+</div>
+
+<script src="/javascripts/otp.js"></script>
+<script src="/javascripts/cleanBtn.js"></script>
+<script src="/javascripts/copyBtn.js"></script>
