@@ -8,14 +8,19 @@ Aplicação desenvolvida para o Projeto de Introdução à Criptografia da disci
 O sistema implementa vários algoritmos de criptografia, permitindo criptografia e descriptografia de mensagens por uma interface web simples.
 
 ---
+## Acesso Online
 
-## Instalação e Execução
+A aplicação pode ser acessada e testada diretamente pelo link:
+https://criptografias-jcrsegs-ifsp.diogotoporcov.com/
+
+
+## Instalação e Execução Local
 
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/diogotoporcov/ifsp-jcrsegs-vigenere.git
-   cd ifsp-jcrsegs-vigenere
+   git clone https://github.com/diogotoporcov/ifsp-jcrsegs-projeto-introducao-a-criptografia.git
+   cd ifsp-jcrsegs-projeto-introducao-a-criptografia
    ```
 
 2. **Instale as dependências:**
